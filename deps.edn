@@ -1,5 +1,5 @@
 {:paths
- [:src-paths :resources-paths :output-paths :tests-paths]
+ [:src-paths :resources-paths :output-paths]
 
  :deps {org.clojure/clojurescript {:mvn/version "1.10.879"}
         com.bhauman/figwheel-main {:mvn/version "0.2.15"}
@@ -9,10 +9,9 @@
  {:src-paths ["src"]
   :resources-paths ["resources"]
   :output-paths ["target"]
-  :tests-paths ["tests"]
   :dev
-  {:main-opts ["--main"    "figwheel.main"
-               "--compile" "example-app.core"
+  {:main-opts ["--main"  "figwheel.main"
+               "--build" "dev"
                "--repl"]}}
 
  ;; primitive
