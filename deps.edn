@@ -2,7 +2,8 @@
  [:src-paths :resources-paths :output-paths :tests-paths]
 
  :deps {org.clojure/clojurescript {:mvn/version "1.10.879"}
-        com.bhauman/figwheel-main {:mvn/version "0.2.15"}}
+        com.bhauman/figwheel-main {:mvn/version "0.2.15"}
+        reagent/reagent           {:mvn/version "1.1.0"}}
 
  :aliases
  {:src-paths ["src"]
